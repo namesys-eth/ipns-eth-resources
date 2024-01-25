@@ -502,9 +502,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0813612"
-     inkscape:cx="272.72441"
-     inkscape:cy="157.09691"
+     inkscape:zoom="1.0385204"
+     inkscape:cx="172.58194"
+     inkscape:cy="145.54201"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -714,7 +714,7 @@
     <text
        xml:space="preserve"
        style="font-size:5.15955px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.0336177px;text-anchor:middle;fill:#ff4400;fill-opacity:1;stroke:#ff4400;stroke-width:0.0976778;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-1595.0233"
+       x="-1595.9122"
        y="88.096642"
        id="text847-6-8-3"
        inkscape:export-filename="/Users/sshmatrix/Idee/sshmatrix/Buidl/namesys-eth/ipns-eth-resources/graphics/png/logo.png"
@@ -722,8 +722,10 @@
        inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan845-4-9-7"
-         x="-1595.0402"
+         x="-1595.9291"
          y="88.096642"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.15955px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#ff4400;fill-opacity:1;stroke:#ff4400;stroke-width:0.0976778;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Eth</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.15955px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#ff4400;fill-opacity:1;stroke:#ff4400;stroke-width:0.0976778;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">.<tspan
+   style="font-size:2.33733px"
+   id="tspan982"> </tspan>Eth</tspan></text>
   </g>
 </svg>

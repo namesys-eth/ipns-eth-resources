@@ -1,4 +1,7 @@
-# `IPNS.eth`: Keyless Pinning Service by NameSys
+![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/png/logo-small.png)
+&nbsp;
+
+# `IPNS.eth`: Keyless Pinning Service
 
 ### Pin Content to IPNS Trustlessly and Securely!
 
@@ -26,7 +29,7 @@ let origin = `eth:<ETH_ADDR_CHECKSUM>` || `btc:<BITCOIN_ADDR>` || `sol:<SOLANA_A
 ```
 
 ### b) Keyname
-`keyname` is a identifier for an IPNS key, such that
+`keyname` is an identifier for an IPNS key, such that
 
 ```js
 let keyname = 'keyname'
