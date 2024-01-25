@@ -15,9 +15,9 @@
    id="svg6"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="/Users/sshmatrix/Idee/sshmatrix/Buidl/namesys-eth/isdev-eth-resources/graphics/png/logo.png"
-   inkscape:export-xdpi="200"
-   inkscape:export-ydpi="200">
+   inkscape:export-filename="/Users/sshmatrix/Idee/sshmatrix/Buidl/namesys-eth/ipns-eth-resources/graphics/png/logo.png"
+   inkscape:export-xdpi="400"
+   inkscape:export-ydpi="400">
   <metadata
      id="metadata959">
     <rdf:RDF>
@@ -32,6 +32,18 @@
   </metadata>
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient982">
+      <stop
+         style="stop-color:#ff4400;stop-opacity:1;"
+         offset="0"
+         id="stop978" />
+      <stop
+         style="stop-color:#ff4400;stop-opacity:0;"
+         offset="1"
+         id="stop980" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient1059">
@@ -471,6 +483,17 @@
        y2="209.62746"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(2.1934517,0,0,2.2438757,-425.40516,-535.88567)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient982"
+       id="radialGradient986"
+       cx="-1625.5623"
+       cy="97.812225"
+       fx="-1625.5623"
+       fy="97.812225"
+       r="36.549412"
+       gradientTransform="matrix(2.4794619,-1.0108536,0.08253421,0.20244319,2396.8846,-1565.1946)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -479,7 +502,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3173545"
+     inkscape:zoom="1.0813612"
      inkscape:cx="272.72441"
      inkscape:cy="157.09691"
      inkscape:document-units="mm"
@@ -487,8 +510,8 @@
      showgrid="false"
      inkscape:window-width="1470"
      inkscape:window-height="891"
-     inkscape:window-x="134"
-     inkscape:window-y="91"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
      fit-margin-top="20"
      fit-margin-left="20"
@@ -609,38 +632,38 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:4.14051px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.0269781px;text-anchor:middle;fill:#ff4400;fill-opacity:0.862903;stroke:#ff5900;stroke-width:0.0783863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-size:4.14050999999999991px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.02697810000000000px;text-anchor:middle;fill:#ff4400;fill-opacity:1;stroke:#ff4400;stroke-width:0.0783863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-1641.446"
        y="87.196411"
        id="text847"
        inkscape:export-filename="/Users/sshmatrix/Idee/sshmatrix/Buidl/namesys-eth/ipns-eth-resources/graphics/png/logo.png"
-       inkscape:export-xdpi="499.85333"
-       inkscape:export-ydpi="499.85333"><tspan
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan845"
          x="-1641.4595"
          y="87.196411"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.14051px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#ff4400;fill-opacity:0.862903;stroke:#ff5900;stroke-width:0.0783863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">namesys</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.14050999999999991px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#ff4400;fill-opacity:1;stroke:#ff4400;stroke-width:0.0783863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">namesys</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.14051px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.0269781px;text-anchor:middle;fill:#000000;fill-opacity:0.596774;stroke:#000000;stroke-width:0.0783863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.596078"
+       style="font-size:4.14050999999999991px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.02697810000000000px;text-anchor:middle;fill:#a8a8a8;fill-opacity:1;stroke:#a8a8a8;stroke-width:0.0783863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-1658.5437"
        y="87.198479"
        id="text847-8"
        inkscape:export-filename="/Users/sshmatrix/Idee/sshmatrix/Buidl/namesys-eth/ipns-eth-resources/graphics/png/logo.png"
-       inkscape:export-xdpi="499.85333"
-       inkscape:export-ydpi="499.85333"><tspan
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan845-40"
          x="-1658.5573"
          y="87.198479"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.14051px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#000000;fill-opacity:0.596774;stroke:#000000;stroke-width:0.0783863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.596078">by</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.14050999999999991px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#a8a8a8;fill-opacity:1;stroke:#a8a8a8;stroke-width:0.0783863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">by</tspan></text>
     <g
        id="g1847-0"
        transform="matrix(0.0162707,0,0,0.0162707,-1628.5323,86.453724)"
        inkscape:export-filename="/Users/sshmatrix/Idee/sshmatrix/Buidl/namesys-eth/ipns-eth-resources/graphics/png/logo.png"
-       inkscape:export-xdpi="499.85333"
-       inkscape:export-ydpi="499.85333">
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
       <path
          style="fill:url(#linearGradient1685-5);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 55.320185,79.506781 86.51199,-102.71899 117.70379,17.670414 Z"
@@ -676,31 +699,31 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:23.1967px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.151141px;text-anchor:middle;fill:#ff4400;fill-opacity:0.862903;stroke:#ff5900;stroke-width:0.439149;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-size:23.19669999999999987px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.15114100000000000px;text-anchor:middle;fill:url(#radialGradient986);fill-opacity:1;stroke:#ff4400;stroke-width:0.439149;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        x="-1625.2064"
        y="105.46714"
        id="text847-6-8"
        inkscape:export-filename="/Users/sshmatrix/Idee/sshmatrix/Buidl/namesys-eth/ipns-eth-resources/graphics/png/logo.png"
-       inkscape:export-xdpi="499.85333"
-       inkscape:export-ydpi="499.85333"><tspan
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan845-4-9"
          x="-1625.282"
          y="105.46714"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.1967px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#ff4400;fill-opacity:0.862903;stroke:#ff5900;stroke-width:0.439149;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">IPNS</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.19669999999999987px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:url(#radialGradient986);fill-opacity:1;stroke:#ff4400;stroke-width:0.439149;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">IPNS</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:8.39069px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.0546707px;text-anchor:middle;fill:#ff4400;fill-opacity:0.862903;stroke:#ff5900;stroke-width:0.158848;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-1598.7053"
-       y="88.595222"
+       style="font-size:5.15955px;line-height:1.25;font-family:Palatino;-inkscape-font-specification:Palatino;font-variant-ligatures:none;text-align:center;letter-spacing:-0.0336177px;text-anchor:middle;fill:#ff4400;fill-opacity:1;stroke:#ff4400;stroke-width:0.0976778;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="-1595.0233"
+       y="88.096642"
        id="text847-6-8-3"
        inkscape:export-filename="/Users/sshmatrix/Idee/sshmatrix/Buidl/namesys-eth/ipns-eth-resources/graphics/png/logo.png"
-       inkscape:export-xdpi="499.85333"
-       inkscape:export-ydpi="499.85333"><tspan
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
          sodipodi:role="line"
          id="tspan845-4-9-7"
-         x="-1598.7327"
-         y="88.595222"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.39069px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#ff4400;fill-opacity:0.862903;stroke:#ff5900;stroke-width:0.158848;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Eth</tspan></text>
+         x="-1595.0402"
+         y="88.096642"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.15955px;font-family:'NGC 292';-inkscape-font-specification:'NGC 292, ';fill:#ff4400;fill-opacity:1;stroke:#ff4400;stroke-width:0.0976778;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Eth</tspan></text>
   </g>
 </svg>
