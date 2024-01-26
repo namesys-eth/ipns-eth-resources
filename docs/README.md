@@ -22,7 +22,7 @@ It's autonomous, trustless, keyless and secure, and it is the first of its kind.
 
 ## Showcase
 
-![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/screenshots/1.png)
+![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/screenshots/1.png)
 
 ## Specification
 
