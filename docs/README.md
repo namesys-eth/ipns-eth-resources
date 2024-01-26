@@ -26,28 +26,19 @@ It's autonomous, trustless, keyless and secure, and it is the first of its kind.
 
 ## Specification
 
-### a) Origin
-
-`origin` is associated with a blockchain account `ETH_ADDR` deriving IPNS keys, such that
-
-```js
-let origin = `eth:<ETH_ADDR_CHECKSUM>` || `btc:<BITCOIN_ADDR>` || `sol:<SOLANA_ADDR>`
-```
-
-### b) Keyname
+### a) Keyname
 `keyname` is an identifier for an IPNS key, such that
-
 ```js
 let keyname = 'keyname'
 ```
 
-### c) Password
+### b) Password
 `password` is an optional `string` value used to salt the key derivation function (HKDF),
 ```js
 let password = "horse staple battery"
 ```
 
-### d) Chain-agnostic Identifiers
+### c) Chain-agnostic Identifiers
 Chain-agnostic [CAIP-02: Blockchain ID Specification](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-2.md) and [CAIP-10: Account ID Specification](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md) schemes are used to generate blockchain and address identifiers `caip02` and `caip10` respectively,
 ```js
 let caip02 =
@@ -58,16 +49,16 @@ let caip02 =
 let caip10 = `${caip02}:<ADDR_CHECKSUM>`;
 ```
 
-### e) Info
+### d) Info
 `info` is CAIP-10 and Keyname string formatted as:
  ```js
  let info = `${caip10}:${keyname}`;
  ```
 
-### f) Message
+### e) Message
 Deterministic `message` to be signed by the wallet provider,
 ```js
-let message = `Requesting Signature To Generate IPNS Key\n\nOrigin: ${origin}\nKey Type: ed25519\nExtradata: ${extradata}\nSigned By: ${caip10}`
+let message = `Requesting Signature To Generate IPNS Key\n\nOrigin: ${keyname}\nKey Type: ed25519\nExtradata: ${extradata}\nSigned By: ${caip10}`
 ```
 
 such that
@@ -84,13 +75,13 @@ bytes32 extradata = keccak256(
             );
 ```
 
-### g) Signature
+### f) Signature
 [RFC-6979](https://datatracker.ietf.org/doc/html/rfc6979) compatible (ECDSA) deterministic `signature` calculated by the wallet provider using native keypair,
 ```js
 let signature = wallet.signMessage(message);
 ```
 
-### h) Salt
+### g) Salt
 `salt` is SHA-256 hash of the `info`, optional password and last **32 bytes** of signature string formatted as:
 
 ```js
@@ -98,7 +89,7 @@ let salt = await sha256(`${info}:${password?password:""}:${signature.slice(68)}`
 ```
 where, `signature.slice(68)` are the last 32 bytes of the deterministic ECDSA-derived Ethereum signature.
 
-### i) Key Derivation Function (KDF)
+### h) Key Derivation Function (KDF)
 HMAC-Based KDF `hkdf(sha256, inputKey, salt, info, dkLen = 42)` is used to derive the **42 bytes** long **hashkey** with inputs,
 
 - `inputKey` is SHA-256 hash of signature bytes,
