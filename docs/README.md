@@ -5,13 +5,15 @@
 
 ### Pin Content to IPNS Trustlessly and Securely!
 
-##### By : [`sshmatrix.eth`](@sshmatrix) & [`freetib.eth`](@0xc0de4c0ffee) for NameSys
+##### By: [`sshmatrix.eth`](@sshmatrix) & [`freetib.eth`](@0xc0de4c0ffee) for NameSys
 
-**Clients @ `v1.0-beta`:** [`ipns.eth`](https://ipns.eth.limo) | [`ipns.dev`](https://ipns.dev) | [`pin.namesys.xyz`](https://pin.namesys.xyz)
+**Client `v1.0-beta`:** [`ipns.eth`](https://ipns.eth.limo) | [`ipns.dev`](https://ipns.dev) | [`pin.namesys.xyz`](https://pin.namesys.xyz)
+
+**GitHub:** [`namesys-eth/ipns-eth-client`](https://github.com/namesys-eth/)
 
 ## Abstract
 
-`IPNS.eth` is a no-nonsense, autonomous, trustless, keyless and secure IPNS Pinning Service. Users of `IPNS.eth` do not need to share their IPNS keys with service providers, and can securely and 'keylessly' publish to IPFS network with anonymity. To our knowledge, this is the first such service in existence.
+`IPNS.eth` is a no-nonsense, free, open-source, autonomous, trustless, keyless and secure IPNS Pinning Service. Users of `IPNS.eth` do not need to share their IPNS keys with service providers, and can securely and 'keylessly' publish to IPFS network with anonymity. To our knowledge, this is the first such service and public good in existence.
 
 ## Motivation
 
