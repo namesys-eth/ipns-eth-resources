@@ -7,16 +7,22 @@
 
 ##### By : [`sshmatrix.eth`](@sshmatrix) & [`freetib.eth`](@0xc0de4c0ffee) for NameSys
 
+**Clients @ `v1.0-beta`:** [`ipns.eth`](https://ipns.eth.limo) | [`ipns.dev`](https://ipns.dev) | [`pin.namesys.xyz`](https://pin.namesys.xyz)
+
 ## Abstract
 
-No-nonsense, autonomous, trustless, keyless and secure IPNS Pinning Service.
+`IPNS.eth` is a no-nonsense, autonomous, trustless, keyless and secure IPNS Pinning Service. Users of `IPNS.eth` do not need to share their IPNS keys with service providers, and can securely and 'keylessly' publish to IPFS network with anonymity. To our knowledge, this is the first such service in existence.
 
 ## Motivation
 
-It's autonomous, trustless, keyless and secure. It is first of its kind. That's plenty of motivation.
+It's autonomous, trustless, keyless and secure, and it is the first of its kind. Users of IPNS have so far required to either share their private keys with service providers such as [1W3.io](https://1w3.io) or [dWebServices.xyz](https://dWebServices.xyz), or publish privately from their IPFS nodes. `IPNS.eth` is the first service which removes this severe security flaw and accessibility issue by employing a "keyless" interface to the IPFS network. Users' IPNS keys are generated deterministically from their Ethereum wallet signatures **only during an update**, and the content is then pinned and published on NameSys's fork of `w3name` publishing infrastructure deployed on Cloudflare.
 
 &nbsp;
 ![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/png/keygen.png)
+
+## Showcase
+
+![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/screenshots/1.png)
 
 ## Specification
 
