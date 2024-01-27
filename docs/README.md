@@ -123,3 +123,91 @@ HMAC-Based KDF `hkdf(sha256, inputKey, salt, info, dkLen = 42)` is used to deriv
    let pubKey = ed25519.utils.getPublicKey(privKey);
    ```
    The resulting `privKey` and `pubKey` is the `ed25519` deterministic keypair that can interact with IPFS network. 
+
+## Implementation Requirements
+
+- Connected Ethereum wallet Signer **MUST** be EIP-191 and RFC-6979 compatible.
+- The `message` **MUST** be string formatted as
+```
+Requesting Signature To Generate IPNS Key\n\nOrigin: ${keyname}\nKey Type: ed25519\nExtradata: ${extradata}\nSigned By: ${caip10}
+```
+- HKDF `inputKey` **MUST** be generated as the SHA-256 hash of 65 bytes long signature.
+- HKDF `salt` **MUST** be generated as SHA-256 hash of string
+```
+${info}:${password?password:""}:${signature.slice(68)}
+```
+- HKDF Derived Key Length (`dkLen`) **MUST** be 42.
+- HKDF `info` **MUST** be string formatted as
+```
+${caip10}:${keyname}
+```
+
+## TS Example
+```ts
+import * as ed25519 from '@noble/ed25519'
+import {hkdf} from '@noble/hashes/hkdf'
+import {sha256} from '@noble/hashes/sha256'
+import {ethers} from 'ethers'
+
+let wallet = new ethers.Wallet(PRIVATE_KEY, provider)
+let keyname = "keyname"
+let chainId = wallet.getChainId(); // get ChainID from connected wallet
+let address = wallet.getAddress(); // get Address from wallet
+let caip10 = `eip155:${chainId}:${address}`;
+let message = `Requesting Signature To Generate IPNS Key\n\nOrigin: ${keyname}\nKey Type: ed25519\nExtradata: ${extradata}\nSigned By: ${caip10}`
+let signature = wallet.signMessage(message); // request Signature from wallet
+let password = "horse staple battery"
+
+/**
+ * @param  keyname Key identifier
+ * @param    caip10 CAIP identifier for the blockchain account
+ * @param signature Deterministic signature from X-wallet provider
+ * @param  password Optional password
+ * @returns Deterministic private/public keypairs as hex strings
+ * Hex-encoded
+ * [ed25519.priv, ed25519.pub]
+ */
+export async function KEYGEN(
+  keyname: string,
+  caip10: string,
+  signature: string,
+  password: string | undefined
+): Promise<[
+  string, string
+]> {
+  if (signature.length < 64)
+    throw new Error('SIGNATURE TOO SHORT; LENGTH SHOULD BE 65 BYTES')
+  let inputKey = sha256(
+    ed25519.utils.hexToBytes(
+      signature.toLowerCase().startsWith('0x') ? signature.slice(2) : signature
+    )
+  )
+  let info = `${caip10}:${keyname}`
+  let salt = sha256(`${info}:${password ? password : ''}:${signature.slice(-64)}`)
+  let hashKey = hkdf(sha256, inputKey, salt, info, 42)
+  let ed25519priv = ed25519.utils.hashToPrivateScalar(hashKey).toString(16).padStart(64, "0") // ed25519 Private Key
+  let ed25519pub = ed25519.utils.bytesToHex(await ed25519.getPublicKey(ed25519priv)) // ed25519 Public Key
+  return [ // Hex-encoded [ed25519.priv, ed25519.pub]
+    ed25519priv, ed25519pub
+  ]
+}
+
+```
+
+## Security Considerations
+
+- Users **SHOULD** always verify the integrity and authenticity of their client before signing the message.
+- Users **SHOULD** ensure that they only input their `keyname` and `password` in trusted and secure clients.
+
+## References
+
+- [RFC-6979: Deterministic Usage of the DSA and ECDSA](https://datatracker.ietf.org/doc/html/rfc6979)
+- [RFC-5869: HKDF (HMAC-based Extract-and-Expand Key Derivation Function)](https://datatracker.ietf.org/doc/html/rfc5869)
+- [CAIP-02: Blockchain ID Specification](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-2.md)
+- [CAIP-10: Account ID Specification](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md)
+- [Digital Signature Standard (DSS), FIPS 186-4 B.4.1](https://csrc.nist.gov/publications/detail/fips/186/4/final)
+- [ERC-191: Signed Data Standard](https://eips.ethereum.org/EIPS/eip-191)
+- [EIP-155: Simple Replay Attack Protection](https://eips.ethereum.org/EIPS/eip-155)
+- [ECDSA Signature Standard](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.38.8014)
+- [@noble/hashes](https://github.com/paulmillr/noble-hashes)
+- [@noble/secp256k1](https://github.com/paulmillr/noble-secp256k1)
