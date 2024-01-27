@@ -58,7 +58,7 @@ let caip10 = `${caip02}:<ADDR_CHECKSUM>`;
  ```
 
 ### e) Message
-Deterministic `message` to be signed by the wallet provider,
+**Deterministic** `message` to be signed by the wallet provider,
 ```js
 let message = `Requesting Signature To Generate IPNS Key\n\nOrigin: ${keyname}\nKey Type: ed25519\nExtradata: ${extradata}\nSigned By: ${caip10}`
 ```
@@ -122,3 +122,4 @@ HMAC-Based KDF `hkdf(sha256, inputKey, salt, info, dkLen = 42)` is used to deriv
    let privKey = ed25519.utils.hashToPrivateScalar(hashKey);
    let pubKey = ed25519.utils.getPublicKey(privKey);
    ```
+   The resulting `privKey` and `pubKey` is the `ed25519` deterministic keypair that can interact with IPFS network. 
