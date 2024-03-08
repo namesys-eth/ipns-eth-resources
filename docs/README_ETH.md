@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/png/logo-small.png)
+![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/png/logo-small_eth.png)
 &nbsp;
 
 # `IPNS.eth`: Keyless Pinning Service
@@ -20,11 +20,7 @@
 It's autonomous, trustless, keyless and secure, and it is the first of its kind. Users of IPNS have so far required to either share their private keys with service providers such as [1W3.io](https://1w3.io) or [dWebServices.xyz](https://dWebServices.xyz), or publish privately from their IPFS nodes. `IPNS.eth` is the first service which removes this severe security flaw and accessibility issue by employing a "keyless" interface to the IPFS network. Users' IPNS keys are generated deterministically from their Ethereum wallet signatures **only during an update**, and the content is then pinned and published on NameSys's fork of `w3name` publishing infrastructure deployed on Cloudflare.
 
 &nbsp;
-![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/png/keygen.png)
-
-## Showcase
-
-![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/screenshots/1.png)
+![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/png/keygen_eth.png)
 
 ## Specification
 
@@ -159,7 +155,7 @@ let signature = wallet.signMessage(message); // request Signature from wallet
 let password = "horse staple battery"
 
 /**
- * @param  keyname Key identifier
+ * @param   keyname Key identifier
  * @param    caip10 CAIP identifier for the blockchain account
  * @param signature Deterministic signature from X-wallet provider
  * @param  password Optional password
