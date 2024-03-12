@@ -5,25 +5,22 @@
 
 ### Pin Content to IPNS Trustlessly and Securely!
 
-##### By: [`sshmatrix.eth`](@sshmatrix) & [`freetib.eth`](@0xc0de4c0ffee) for NameSys
+##### By: [`sshmatrix`](@sshmatrix) & [`0xc0de4c0ffee`](@0xc0de4c0ffee) for NameSys
 
-**Client `v1.0-beta`:** [`ipns.eth`](https://ipns.eth.limo) | [`ipns.dev`](https://ipns.dev) | [`pin.namesys.xyz`](https://pin.namesys.xyz)
+**Client `v1.0-beta`:** [`ipns.dev`](https://ipns.dev) | [`pin.namesys.xyz`](https://pin.namesys.xyz)
 
-**GitHub:** [`namesys-eth/ipns-eth-client`](https://github.com/namesys-eth/)
+**GitHub:** [`@namesys/ipns-client`](https://github.com/namesys-eth/)
 
 ## Abstract
-
 `IPNS.dev` is a no-nonsense, free, open-source, autonomous, trustless, keyless and secure IPNS Pinning Service. Users of `IPNS.dev` do not need to share their IPNS keys with service providers, and can securely and 'keylessly' publish to IPFS network with anonymity. To our knowledge, this is the first such service and public good in existence.
 
 ## Motivation
-
 It's autonomous, trustless, keyless and secure, and it is the first of its kind. Users of IPNS have so far required to either share their private keys with service providers such as [1W3.io](https://1w3.io) or [dWebServices.xyz](https://dWebServices.xyz), or publish privately from their IPFS nodes. `IPNS.dev` is the first service which removes this severe security flaw and accessibility issue by employing a "keyless" interface to the IPFS network. Users' IPNS keys are generated deterministically from their Ethereum wallet signatures **only during an update**, and the content is then pinned and published on NameSys's fork of `w3name` publishing infrastructure deployed on Cloudflare.
 
 &nbsp;
 ![](https://raw.githubusercontent.com/namesys-eth/ipns-eth-resources/main/graphics/png/keygen_dev.png)
 
 ## Specification
-
 ### a) Keyname
 `keyname` is an identifier for an IPNS key, such that
 ```js
